@@ -1,0 +1,132 @@
+---
+mode: 'custom'
+---
+
+export function openSearch() {
+  document.getElementById('search-bar-entry').click();
+}
+
+<div className="relative w-full flex items-center justify-center" style={{ height: '24rem', overflow: 'hidden' }}>
+  <div id="background-div" class="absolute inset-0" style={{height: "24rem", backgroundSize: "cover", backgroundPosition: "center"}}></div>
+  
+  <div style={{ position: 'absolute', textAlign: 'center', padding: '0 1rem', maxWidth: '100%', left: '50%', transform: 'translateX(-50%)' }}>
+    <h1
+      className="text-white "
+      style={{
+          marginTop: '4rem',
+          fontSize: '42px',
+          fontWeight: 500,
+          margin: '0',
+          whiteSpace: 'nowrap',
+          textAlign: 'center'
+      }}
+    >
+      Welcome to Katalon's Developer Portal
+    </h1>
+    <p className="mt-2 text-white">How can we help you? </p>
+    <div className="flex items-center justify-center">
+	<div className="flex items-center justify-center" style={{ width: '100%' }}>
+    <button
+      type="button"
+      className="hidden w-full lg:flex items-center text-sm leading-6 rounded-lg py-2 pl-3 pr-3 shadow-sm text-gray-400 dark:text-white/50 bg-background-light dark:bg-background-dark dark:brightness-[1.1] dark:ring-1 dark:hover:brightness-[1.25] ring-1 ring-gray-400/20 hover:ring-gray-600/25 dark:ring-gray-600/30 dark:hover:ring-gray-500/30 focus:outline-primary"
+      id="home-search-entry"
+      style={{
+        marginTop: '2rem',
+        maxWidth: '100rem',
+        width: '90%',
+        margin: '2rem auto 0'
+      }}
+      onClick={openSearch}
+    >
+      <svg
+        className="h-4 w-4 ml-1.5 flex-none bg-primary-light hover:bg-gray-600 dark:bg-white/50 dark:hover:bg-white/70"
+        style={{
+          marginRight: '0.5rem',
+         maskImage:
+           'url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg")',
+         maskRepeat: 'no-repeat',
+         maskPosition: 'center center',
+        }}
+      />
+      Search docs, guides, and more... 
+    </button>
+    </div>
+	</div>
+  </div>
+</div>
+
+<div
+  style={{marginTop: '2rem', marginBottom: '8rem', maxWidth: '70rem', marginLeft: 'auto',
+   marginRight: 'auto', paddingLeft: '1.25rem',
+   paddingRight: '1.25rem' }}
+>
+  <CardGroup cols={3}>
+    <Card title="Katalon TestOps" icon="chart-line" href="/katalon-platform/about-katalon-testops" iconType="solid">
+    Collaborate and scale your testing workflow with our dynamic quality management platform
+    </Card>
+
+    <Card title="Katalon Studio" icon="code" href="/katalon-studio/about-katalon-studio"iconType="solid">
+    Simplify automated test authoring for Web, Mobile, and Desktop with our intuitive IDE
+    </Card>
+  <Card title="Katalon TestCloud" icon="cloud" href="/katalon-testcloud/testcloud-overview"iconType="solid">
+    Run automated tests remotely across different test environments with minimal setup and maintenance
+  </Card>
+  </CardGroup>
+
+  <div
+    className="text-gray-900 dark:text-gray-200"
+    style={{
+     textAlign: 'center',
+     fontSize: '24px',
+     fontWeight: '500',
+     marginBottom: '2rem',
+     marginTop: "2rem",
+    }}
+  >
+  Popular Guides
+  </div>
+  <CardGroup>
+  <Card
+    title="Quick guide for testers"
+    icon="flask"
+    href="/katalon-studio/get-started/quick-guide-for-testers"
+    iconType="solid"
+    horizontal
+  />
+  <Card
+    title="Account activation problems"
+    icon="circle-exclamation"
+    href="/katalon-platform/troubleshooting/troubleshooting-common-administrative-issues/account-activation-problems"
+    iconType="solid"
+    horizontal
+  />
+  <Card
+    title="Katalon Studio installation overview"
+    icon="download"
+    href="/katalon-studio/get-started/install-katalon-studio"
+    iconType="solid"
+    horizontal
+  />
+  <Card
+    title="Integrations in Katalon Platform"
+    icon="puzzle-piece"
+    href="/katalon-platform/integrations/integrations-in-katalon-platform"
+    iconType="solid"
+    horizontal
+  />
+  <Card
+    title="The Mobile Testing Cookbook"
+    icon="mobile"
+    href="/katalon-studio/cookbooks/mobile-testing-cookbook/the-mobile-testing-cookbook"
+    iconType="solid"
+    horizontal
+  />
+  <Card
+    title="Katalon Studio best practices"
+    icon="star"
+    href="/katalon-studio/get-started/katalon-studio-best-practices"
+    iconType="solid"
+    horizontal
+  />
+</CardGroup>
+</div>

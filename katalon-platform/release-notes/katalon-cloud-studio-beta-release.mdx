@@ -1,0 +1,233 @@
+---
+title: "Katalon Cloud Studio (Beta) release"
+description: "Katalon is steadily rolling out Katalon Cloud Studio (Beta) in a series of releases. Katalon Cloud Studio (Beta) and earlier releases are available only for selected Katalon TestOps plan users."
+---
+
+Refer to the following topics for the version release of Katalon Cloud Studio (Beta).
+
+<Update label="Beta - November 29, 2023">
+The following features and improvements are included in the latest release of Katalon Cloud Studio (Beta). Katalon Cloud Studio (Beta) and earlier releases remain to be available only for selected Katalon users.
+
+### New feature
+
+* The latest version of Katalon Cloud Studio (Beta) introduces the sample test case, enabling you to quickly explore the Cloud Studio features without starting from scratch. For more details, see [Get started with a sample test case](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/create-a-test-case#task-5438).
+
+### Enhancements
+
+* Added the following supported actions. For more information, see [Supported actions](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions):
+
+  * [verifyNumberGreaterThanOrEqual](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-2375)
+
+  * [verifyNumberLessThanOrEqual](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-2230)
+
+  * [verifyElementChecked](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-5257)
+
+* The latest version of Katalon Cloud Studio (Beta) also has enhancements to the playback log content. You can now view information about the test run environment, including the browser and OS. For more information, see [View playback log](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/playback-a-cloud-studio-beta-test-case#task-2650).
+
+* You can now manually set the timeout (in seconds) for the Open Browser keyword. This enhancement gives you greater control over the time that the engine should wait for the browser to fully load during playback. For more information, see [Edit timeout window for OpenBrowser keyword](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#task-7759).
+</Update>
+
+<Update label="Beta - October 25, 2023">
+The following features and improvements are included in the latest release of Katalon Cloud Studio (Beta). Katalon Cloud Studio (Beta) and earlier releases remain to be available only for selected Katalon users.
+
+### New features
+
+* All Katalon Cloud Studio (Beta) test cases are now automatically saved to [Katalon Cloud](#).
+
+  * You can access your Katalon Cloud Studio (Beta) test cases from anywhere and is not limited to a specific browser.
+
+  * Your progress in each Katalon Cloud Studio (Beta) test case is saved automatically, so you can focus on updating them without losing your work.
+
+  * This also means that the latest version of Katalon Cloud Studio (Beta) has phased out the workflow step of "saving" your new test case as a [draft test case](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/create-a-blank-test-case#concept-8633) as they are automatically "published" to the cloud.
+
+* Introduced a new feature called Instant Run. Use Instant Run to quickly execute individual Katalon Cloud Studio (Beta) test cases on Katalon Cloud and access analytics reports without the need to create a test suite. See the following topic for more information: [Instantly run a test case in Katalon Cloud](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/execute-katalon-cloud-studio-beta-tests/instantly-run-a-test-case-in-katalon-cloud).
+
+### Enhancements
+
+* Added the following supported actions. For more information, see [Supported actions](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions):
+
+  * [verifyNumberGreaterThan](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-4290)
+
+  * [verifyNumberLessThan](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-6956)
+
+* The latest version of Katalon Cloud Studio (Beta) has made UI improvements by moving the **+ Test Case** button on the main and side navigation so you can create test cases directly from the **Tests** tab, with the AUT launching automatically for quicker recording of test steps. This improvement reduces the time it takes for you to start recording a test case.
+
+* The latest version of Katalon Cloud Studio (Beta) has improved the Editor UI. Now you can quickly execute tests or add them to test suites within the Editor, allowing for quicker navigation and improved productivity.
+
+* Users can no longer create, store, and modify Katalon Cloud Studio (Beta) test cases and test suites in Git repositories. However, if Katalon Cloud Studio (Beta) test cases and test suites in Git repositories were previously made, you can still view and execute your test cases and test suites on the Katalon TestOps.
+
+### Bugs fixed
+
+* The issue with the Open Browser keyword causing errors when running tests with TestCloud has been resolved.
+
+* Some users report sync issues and/or encounter duplicate test cases across browsers. With all Katalon Cloud Studio (Beta) test cases now saved on the Katalon Cloud, users can experience seamless test case management and improved reliability.
+
+  * [https://github.com/katalon-studio/cloud-studio/issues/5](https://github.com/katalon-studio/cloud-studio/issues/5)
+
+  * [https://github.com/katalon-studio/cloud-studio/issues/10](https://github.com/katalon-studio/cloud-studio/issues/10)
+
+</Update>
+
+<Update label="Beta - September 20, 2023">
+The following features and improvements are included in the latest release of Katalon Cloud Studio (Beta). Katalon Cloud Studio (Beta) and earlier releases remain to be available only for selected Katalon users.
+
+### New feature
+
+* You can now view the video recording in a test suite report if a Katalon Cloud Studio (Beta) test case fails during a test suite execution. This provides visual documentation for any failed test case, making it easier to identify the issue.
+
+### Enhancements
+
+* Added the following supported actions. For more information, see [Supported actions](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions):
+
+  * [hoverOver](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-6535)
+
+  * [verifyURL](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-6065)
+
+* The latest version of Katalon Cloud Studio (Beta) now automatically opens your desired app URL in a new window after you have successfully installed the Katalon Platform Recorder browser extension. This enhancement speeds up the time it takes for you to start recording a test case.
+</Update>
+
+<Update label="Beta - August 21, 2023">
+The following features and improvements are included in the latest release of Katalon Cloud Studio (Beta). Katalon Cloud Studio (Beta) and earlier releases remain to be available only for selected Katalon users.
+
+### Enhancements
+
+* Added the following supported actions. For more information, see [Supported actions](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions):
+
+  * [verifyElementAttributeValue](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-9652)
+
+  * [waitForElementPresent](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-3878)
+
+* You can now record a new or empty test case with a clean session. This prevents interference from the currently opened browser and ensures more reliable recording and playback.
+
+* You can now quickly access Cloud Studio (Beta) by clicking the Katalon Platform Recorder extension in your web browser bar.
+
+<Frame>
+  <img src="/images/katalon-platform/release-notes/0b66c1b0-3d6c-11ee-9d19-0242c7a41fd4/KCS_click_Recorder_browser_extension.png" alt="Click Katalon Platform Recorder extension to go to Katalon Platform > TestOps."/>
+</Frame>
+
+* The latest version of Katalon Cloud Studio (Beta) also suggests a list of recently recorded URLs, making it convenient to reuse a URL of the webpage you want to test.
+
+<Frame>
+  <img src="/images/katalon-platform/release-notes/0b63b470-3d6c-11ee-9d19-0242c7a41fd4/KCS_suggest_URLs.png" alt="Katalon Cloud Studio suggests recent URLs for testing."/>
+</Frame>
+### Bug fixed
+
+* In some AUTs with pop-ups, the Recorder floating menu appears behind the pop-up, making it difficult to interact with. Katalon Cloud Studio (Beta) now ensures that the Recorder menu consistently stays in front for easy interaction.
+
+</Update>
+
+<Update label="Beta - June 28, 2023">
+The following features and improvements are included in the latest release of Katalon Cloud Studio (Beta). Katalon Cloud Studio (Beta) and earlier releases remain to be available only for selected Katalon users.
+
+### New features
+
+* The latest version of Katalon Cloud Studio (Beta) allows you to edit a test by changing the action, object, and input by using the Editor. See the following topic for more information: [Edit test case steps](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/edit-a-test-case#task-5608).
+
+* You can now add new test steps in a test case directly in the Editor by:
+
+  * Using the Add new test step button to add a step at the end of the test steps.
+
+  * Hovering between steps to add a new step in between.
+
+  You can search and add any of the fourteen (14) [Supported actions](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions), with more to come in future releases. See the following topic for more information: [Add a new test step](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/edit-a-test-case#task-667).
+
+* You can now add a new object while editing or adding a new test step using the Katalon Platform Recorder extension. See the following topic for more information: [Capture new object](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/edit-a-test-case#task-2561).
+
+* You can also cut and paste or copy and paste test steps in the Editor. See the following topic for more information: [Cut and copy test steps](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/edit-a-test-case#task-3917).
+
+### Enhancements
+
+* Added the following [supported actions:](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions)
+
+  * [verifyElementNotPresent](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-5529)
+
+  * Take screenshot of the current viewport ([takeScreenshot](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-2296))
+
+   <Info>
+     **Note:**
+
+    [takeScreenshot](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-2296) is currently supported when running with the Katalon Platform Recorder extension.
+   </Info>
+</Update>
+
+
+<Update label="Beta - May 31, 2023">
+The latest release of Katalon Cloud Studio (Beta) now allows select Katalon users full access to the [Beta - April 26, 2023](/katalon-platform/release-notes/katalon-cloud-studio-beta-release#concept-201) release, including the following new features and enhancements.
+
+### New features
+
+* The latest version of Katalon Cloud Studio (Beta) allows you to create and manage a test suite of your published Cloud Studio (Beta) test cases. A test suite allows you to group certain types of Cloud Studio (Beta) test cases (e.g. slow-running test cases) and schedule them later. See the following topic for more information: [Create a Katalon Cloud Studio (Beta) test suite](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-suite/create-a-katalon-cloud-studio-beta-test-suite).
+
+* You can also schedule a test run of your Cloud Studio (Beta) test cases grouped in a test suite with TestCloud. See the following topic for more information: [Schedule a test suite](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/execute-katalon-cloud-studio-beta-tests/schedule-a-test-suite).
+
+* You can now view a report of your Cloud Studio (Beta) test suite after its scheduled run. See the following topic for more information: [View your Cloud Studio (Beta) test suite report](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/analyze-cloud-studio-beta-tests/view-your-cloud-studio-beta-test-suite-report).
+
+### Enhancements
+
+* Added additional supported actions. For more information, see [Supported actions:](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions)
+
+  * [getURL](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-8344)
+
+  * [getText](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-3551)
+
+  * [verifyElementPresent](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/supported-actions#topic-8514)
+
+* Katalon Cloud Studio (Beta) Chrome extension now supports Microsoft Edge. See the following article for more information: [Download and install Katalon Platform Recorder](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/get-started-with-cloud-studio-beta/download-and-install-katalon-platform-recorder).
+
+* You can now duplicate a test step in a Cloud Studio (Beta) test case in the Editor. See the following topic for more information: [Duplicate a test step](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/edit-a-test-case#task-1140).
+
+* You can also perform bulk actions on your Cloud Studio (Beta) test case. See the following topics for more information:
+
+  * [Bulk-delete test steps](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/edit-a-test-case#task-2842)
+
+  * [Bulk-duplicate test steps](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/edit-a-test-case#task-9303)
+
+* \[UI] Introduced inline, menu, and right-click options to perform delete and duplicate test actions in Editor. See the following topic for more information: [Edit a test case](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/edit-a-test-case).
+
+* \[UI] Introduced keyword icons to visually indicate test step types added in a test case:
+
+<Frame>
+  <img src="/images/katalon-platform/release-notes/f0672b40-fe08-11ed-878a-0242c7a41fd4/test_step_action_types_icons.png" alt="Test step icons."/>
+</Frame>
+</Update>
+
+<Update label="Beta - April 26, 2023">
+The latest addition to the Katalon TestOps, the Katalon Cloud Studio (Beta) allows Katalon TestOps manual testers to create, edit, manage, and publish Katalon Cloud Studio (Beta) draft test cases all in one place.
+
+### Introducing the Katalon Cloud Studio (Beta)
+
+The latest addition to Katalon TestOps, **Katalon Cloud Studio (Beta)** is our new web-based authoring product to help manual testers quickly create test automation for web applications under test (AUT).
+
+The addition of the Cloud-based Studio to Katalon TestOps offers users a seamless and efficient testing process starting from organizing, then authoring, then executing and viewing reports right in one place.
+
+Katalon Cloud Studio (Beta) features the following capabilities:
+
+* [Create draft test cases](#) in your project:
+<Frame>
+  <img src="/images/katalon-platform/release-notes/4ea45830-e56e-11ed-b480-0242cfbc79b5/Test_Explorer_view.png"/>
+</Frame>
+
+* [View your tests on a lightweight Editor](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/edit-a-test-case):
+<Frame>
+  <img src="/images/katalon-platform/release-notes/4eea3ad0-e56e-11ed-b480-0242cfbc79b5/Editor_view.png"/>
+</Frame>
+<Frame>
+  <img src="/images/katalon-platform/release-notes/4f725690-e56e-11ed-b480-0242cfbc79b5/Test_Editor_view.png"/>
+</Frame>
+* [Edit test step actions](/katalon-platform/create-tests/create-tests-using-katalon-cloud-studio-beta/create-and-manage-a-test-case/edit-a-test-case):
+
+  * Delete a test step
+
+  * Drag and drop a test step
+
+* Quickly record your interactions with the AUT to create automated tests in plain English (behind the scene, Katalon tests are TypeScript-based).
+
+* Quickly [run your tests with Recorder](#) for validation.
+
+* [Run test cases for public websites](#) with TestCloud.
+
+* [Maintain](#) a Cloud Studio (Beta) published test case with Editor.
+
+</Update>
+
+
